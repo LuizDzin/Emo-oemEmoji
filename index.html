@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoção em Emoji</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+<body class="body">
+    <div class="container">
+<center>
+    <h1 class="btn btn-success" id="titulo">
+        App Emoção Em Emoji
+        <br>
+        <span>
+        &#128522
+        </span>
+        <span>
+            &#128512
+        </span>
+        <span>
+            &#128533
+        </span>
+        <span>
+            &#128546
+        </span>
+        <span>
+            &#128545
+        </span>
+        <span>
+            &#128548
+        </span>
+    </h1>
+
+    <h3 style="font-family: monospace;">
+Tire Sua Selfie Para Gerar o Emoji
+<br>
+<strong style="color: yellow;">
+Você está Feliz?
+</strong>
+<br>
+<strong style="color: rgb(48, 135, 212);">
+Você está Triste?
+</strong>
+<br>
+<strong style="color: red;">
+Você está Irritado?
+</strong>
+    </h3>
+
+    <div class="col-md-4 col-sm-12 col-xs-12">
+<label class="btn btn-primary">
+    Visualização da WebCam:
+</label>
+<div id="camera"></div>
+<br> <br>
+<button class="btn btn-warning" onclick="takeSnapshot()">
+    Capturar Imagem
+</button>
+    </div>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label class="btn btn-danger">
+            Previsão 1:
+        </label>
+        <p id="precisao1"></p>
+        <p id="precisaoEmoji1"></p>
+        <label class="btn btn-danger">
+            Previsão 2:
+        </label>
+        <p id="precisao2"></p>
+        <p id="precisaoEmoji2"></p>
+    </div>
+    <br>
+    <div class="col-md-4 col-sm-12 col-xs-12">
+        <label class="btn btn-primary">
+            Foto:
+        </label>
+        <div id="result"></div>
+        <br> <br>
+            Prever Emoção
+        </button>
+            </div>
+</center>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

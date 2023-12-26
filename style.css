@@ -1,0 +1,9 @@
+.body {
+background-color: rgb(135, 183, 226);
+}
+
+#titulo {
+    font-size: 4rem;
+    border-radius: 25px;
+    letter-spacing: 6px;
+}
